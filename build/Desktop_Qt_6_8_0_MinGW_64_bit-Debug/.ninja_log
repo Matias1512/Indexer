@@ -1,9 +1,16 @@
 # ninja log v6
-12	84	7500828254354491	C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	572c84ce97ad8b81
-86	382	7500828257439764	indexer_autogen/timestamp	b8c48cb0c578eb6c
-86	382	7500828257439764	indexer_autogen/mocs_compilation.cpp	b8c48cb0c578eb6c
-86	382	7500828257439764	C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/timestamp	b8c48cb0c578eb6c
-86	382	7500828257439764	C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/mocs_compilation.cpp	b8c48cb0c578eb6c
-385	493	7500828258082514	CMakeFiles/indexer.dir/indexer_autogen/mocs_compilation.cpp.obj	9355b17a1d365801
-390	2369	7500828258129358	CMakeFiles/indexer.dir/main.cpp.obj	4f4326f01f58f220
-2371	2572	7500828277938474	indexer.exe	b5dccca84a42c06
+4	158	7500996327018886	C:/Users/kevin/Desktop/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	e4fc1cd6de28aa37
+163	590	7500996328545905	C:/Users/kevin/Desktop/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/mocs_compilation.cpp	513540f188c93b75
+163	590	7500996328545905	C:/Users/kevin/Desktop/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/timestamp	513540f188c93b75
+163	590	7500996328545905	indexer_autogen/timestamp	513540f188c93b75
+2482	3243	7500996351817990	indexer.exe	ec0533ec4e7a9d59
+158	829	7500999797887442	build.ninja	b94876f6e03f60ec
+1072	1759	7500956393695681	CMakeFiles/indexer.dir/indexer_autogen/mocs_compilation.cpp.obj	382e51226a1aad4f
+163	590	7500996328545905	indexer_autogen/mocs_compilation.cpp	513540f188c93b75
+590	2482	7500996332904643	CMakeFiles/indexer.dir/main.cpp.obj	81240ba7cff03e43
+4	136	7501004526145102	C:/Users/kevin/Desktop/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	e4fc1cd6de28aa37
+141	973	7501004534570485	indexer_autogen/timestamp	513540f188c93b75
+141	973	7501004534570485	indexer_autogen/mocs_compilation.cpp	513540f188c93b75
+141	973	7501004534570485	C:/Users/kevin/Desktop/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/timestamp	513540f188c93b75
+141	973	7501004534570485	C:/Users/kevin/Desktop/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/mocs_compilation.cpp	513540f188c93b75
+975	2529	7501004535886597	CMakeFiles/indexer.dir/indexer_autogen/mocs_compilation.cpp.obj	382e51226a1aad4f

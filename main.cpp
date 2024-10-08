@@ -1,10 +1,22 @@
 #include <QCoreApplication>
 #include <QLocale>
 #include <QTranslator>
+#include <QDebug> // Pour utiliser qDebug()
 
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
+
+    // Vérifie si des arguments ont été passés
+    if (argc < 2) {
+        qDebug() << "Aucun argument fourni.";
+        return 1; // Indique une erreur
+    }
+
+    // Imprime les arguments
+    for (int i = 1; i < argc; ++i) {
+        qDebug() << "Argument" << i << ":" << argv[i];
+    }
 
     QTranslator translator;
     const QStringList uiLanguages = QLocale::system().uiLanguages();
@@ -15,17 +27,6 @@ int main(int argc, char *argv[])
             break;
         }
     }
-
-    // Set up code that uses the Qt event loop here.
-    // Call a.quit() or a.exit() to quit the application.
-    // A not very useful example would be including
-    // #include <QTimer>
-    // near the top of the file and calling
-    // QTimer::singleShot(5000, &a, &QCoreApplication::quit);
-    // which quits the application after 5 seconds.
-
-    // If you do not need a running Qt event loop, remove the call
-    // to a.exec() or use the Non-Qt Plain C++ Application template.
 
     return a.exec();
 }
