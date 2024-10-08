@@ -1,0 +1,9 @@
+# ninja log v6
+12	84	7500828254354491	C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	572c84ce97ad8b81
+86	382	7500828257439764	indexer_autogen/timestamp	b8c48cb0c578eb6c
+86	382	7500828257439764	indexer_autogen/mocs_compilation.cpp	b8c48cb0c578eb6c
+86	382	7500828257439764	C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/timestamp	b8c48cb0c578eb6c
+86	382	7500828257439764	C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/mocs_compilation.cpp	b8c48cb0c578eb6c
+385	493	7500828258082514	CMakeFiles/indexer.dir/indexer_autogen/mocs_compilation.cpp.obj	9355b17a1d365801
+390	2369	7500828258129358	CMakeFiles/indexer.dir/main.cpp.obj	4f4326f01f58f220
+2371	2572	7500828277938474	indexer.exe	b5dccca84a42c06
