@@ -1,9 +1,40 @@
 # ninja log v6
-12	84	7500828254354491	C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	572c84ce97ad8b81
-86	382	7500828257439764	indexer_autogen/timestamp	b8c48cb0c578eb6c
-86	382	7500828257439764	indexer_autogen/mocs_compilation.cpp	b8c48cb0c578eb6c
-86	382	7500828257439764	C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/timestamp	b8c48cb0c578eb6c
-86	382	7500828257439764	C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/mocs_compilation.cpp	b8c48cb0c578eb6c
-385	493	7500828258082514	CMakeFiles/indexer.dir/indexer_autogen/mocs_compilation.cpp.obj	9355b17a1d365801
-390	2369	7500828258129358	CMakeFiles/indexer.dir/main.cpp.obj	4f4326f01f58f220
-2371	2572	7500828277938474	indexer.exe	b5dccca84a42c06
+20	163	7501783187353181	C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	572c84ce97ad8b81
+161	758	7501781232722967	indexer_autogen/timestamp	b8c48cb0c578eb6c
+161	758	7501781232722967	indexer_autogen/mocs_compilation.cpp	b8c48cb0c578eb6c
+163	1064	7501783195362128	build.ninja	96a832f7bb2df696
+759	2579	7501781233496414	CMakeFiles/indexer.dir/indexer_autogen/mocs_compilation.cpp.obj	9355b17a1d365801
+2922	3430	7501641911185318	indexer.exe	4f35e2bb32712629
+161	758	7501781232722967	C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/timestamp	b8c48cb0c578eb6c
+161	758	7501781232722967	C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/mocs_compilation.cpp	b8c48cb0c578eb6c
+777	3783	7501620623405205	CMakeFiles/indexer.dir/main.cpp.obj	4f4326f01f58f220
+823	2893	7501641890200565	CMakeFiles/indexer.dir/pushcommand.cpp.obj	1edcd234d11e93a7
+819	2877	7501641890150919	CMakeFiles/indexer.dir/addcommand.cpp.obj	2f1325f4d2f2f799
+339	2252	7501779186649757	CMakeFiles/indexer.dir/abstractcommand.cpp.obj	149024549efe6ca
+827	2879	7501641890239939	CMakeFiles/indexer.dir/clearcommand.cpp.obj	6162b2bd3e86194e
+814	2900	7501641890110614	CMakeFiles/indexer.dir/getcommand.cpp.obj	b116b5ff5a270406
+370	2030	7501774966840465	CMakeFiles/indexer.dir/enumoption.cpp.obj	4d4df459144c7e82
+766	2753	7501779018708148	CMakeFiles/indexer.dir/abstractcommandwithoptions.cpp.obj	75cf07a35d55e762
+804	2797	7501774436180901	CMakeFiles/indexer.dir/commandoption.cpp.obj	fc8be4660e3618e8
+163	979	7501783195362128	build.ninja	96a832f7bb2df696
+22	152	7501783196636928	C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	572c84ce97ad8b81
+162	717	7501783202830065	indexer_autogen/timestamp	b8c48cb0c578eb6c
+162	717	7501783202830065	indexer_autogen/mocs_compilation.cpp	b8c48cb0c578eb6c
+162	717	7501783202830065	C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/timestamp	b8c48cb0c578eb6c
+162	717	7501783202830065	C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/mocs_compilation.cpp	b8c48cb0c578eb6c
+728	2431	7501783203692990	CMakeFiles/indexer.dir/addcommand.cpp.obj	2f1325f4d2f2f799
+718	2490	7501783203597756	CMakeFiles/indexer.dir/indexer_autogen/mocs_compilation.cpp.obj	9355b17a1d365801
+22	145	7501785213830764	C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	572c84ce97ad8b81
+155	333	7501785215204955	indexer_autogen/timestamp	b8c48cb0c578eb6c
+155	333	7501785215204955	indexer_autogen/mocs_compilation.cpp	b8c48cb0c578eb6c
+155	333	7501785215204955	C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/timestamp	b8c48cb0c578eb6c
+155	333	7501785215204955	C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/mocs_compilation.cpp	b8c48cb0c578eb6c
+343	1917	7501785217127123	CMakeFiles/indexer.dir/clearcommand.cpp.obj	6162b2bd3e86194e
+23	157	7501786536211850	C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	572c84ce97ad8b81
+170	363	7501786537790395	indexer_autogen/timestamp	b8c48cb0c578eb6c
+170	363	7501786537790395	indexer_autogen/mocs_compilation.cpp	b8c48cb0c578eb6c
+170	363	7501786537790395	C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/timestamp	b8c48cb0c578eb6c
+170	363	7501786537790395	C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/mocs_compilation.cpp	b8c48cb0c578eb6c
+369	1927	7501786539801686	CMakeFiles/indexer.dir/pushcommand.cpp.obj	1edcd234d11e93a7
+364	1949	7501786539744305	CMakeFiles/indexer.dir/getcommand.cpp.obj	b116b5ff5a270406
+1949	2508	7501786555559206	indexer.exe	82bb85e648501693
