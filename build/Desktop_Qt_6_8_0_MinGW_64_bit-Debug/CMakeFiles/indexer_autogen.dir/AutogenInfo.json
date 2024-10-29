@@ -203,9 +203,27 @@
 			null
 		],
 		[
+			"C:/Users/matia/Documents/Dev Logiciel/indexer/indexercommand.h",
+			"MU",
+			"EWIEGA46WW/moc_indexercommand.cpp",
+			null
+		],
+		[
+			"C:/Users/matia/Documents/Dev Logiciel/indexer/indexercommandoption.h",
+			"MU",
+			"EWIEGA46WW/moc_indexercommandoption.cpp",
+			null
+		],
+		[
 			"C:/Users/matia/Documents/Dev Logiciel/indexer/pushcommand.h",
 			"MU",
 			"EWIEGA46WW/moc_pushcommand.cpp",
+			null
+		],
+		[
+			"C:/Users/matia/Documents/Dev Logiciel/indexer/searchcommand.h",
+			"MU",
+			"EWIEGA46WW/moc_searchcommand.cpp",
 			null
 		]
 	],
@@ -310,9 +328,24 @@
 			"MU",
 			null
 		],
+		[
+			"C:/Users/matia/Documents/Dev Logiciel/indexer/indexercommand.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/matia/Documents/Dev Logiciel/indexer/indexercommandoption.cpp",
+			"MU",
+			null
+		],
 		[ "C:/Users/matia/Documents/Dev Logiciel/indexer/main.cpp", "MU", null ],
 		[
 			"C:/Users/matia/Documents/Dev Logiciel/indexer/pushcommand.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/matia/Documents/Dev Logiciel/indexer/searchcommand.cpp",
 			"MU",
 			null
 		]

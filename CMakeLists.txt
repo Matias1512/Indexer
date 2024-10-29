@@ -25,6 +25,9 @@ add_executable(indexer
   clearcommand.h clearcommand.cpp
   enumoption.h enumoption.cpp
   commandoption.h commandoption.cpp
+  indexercommand.h indexercommand.cpp
+  indexercommandoption.h indexercommandoption.cpp
+  searchcommand.h searchcommand.cpp
 )
 target_link_libraries(indexer Qt${QT_VERSION_MAJOR}::Core)
 
