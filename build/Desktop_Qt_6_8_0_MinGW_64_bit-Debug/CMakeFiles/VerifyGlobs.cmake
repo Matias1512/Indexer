@@ -41,9 +41,11 @@ endif()
 # _directory_contents at C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/kevin/Desktop/Indexer/*.cpp")
 set(OLD_GLOB
-  "C:/Users/kevin/Desktop/Indexer/abstractcommand.cpp"
   "C:/Users/kevin/Desktop/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CompilerIdCXX/CMakeCXXCompilerId.cpp"
+  "C:/Users/kevin/Desktop/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/EWIEGA46WW/moc_abstractcommand.cpp"
   "C:/Users/kevin/Desktop/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/mocs_compilation.cpp"
+  "C:/Users/kevin/Desktop/Indexer/indexer.cpp"
+  "C:/Users/kevin/Desktop/Indexer/indexstatus.cpp"
   "C:/Users/kevin/Desktop/Indexer/main.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -63,8 +65,9 @@ endif()
 # _directory_contents at C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/kevin/Desktop/Indexer/*.h")
 set(OLD_GLOB
-  "C:/Users/kevin/Desktop/Indexer/abstractcommand.h"
   "C:/Users/kevin/Desktop/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/moc_predefs.h"
+  "C:/Users/kevin/Desktop/Indexer/indexer.h"
+  "C:/Users/kevin/Desktop/Indexer/indexstatus.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

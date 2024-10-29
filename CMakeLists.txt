@@ -17,7 +17,13 @@ set(TS_FILES indexer_fr_FR.ts)
 add_executable(indexer
   main.cpp
   ${TS_FILES}
-  abstractcommand.h abstractcommand.cpp
+
+
+
+
+
+  indexer.h indexer.cpp
+  indexstatus.h
 )
 target_link_libraries(indexer Qt${QT_VERSION_MAJOR}::Core)
 
