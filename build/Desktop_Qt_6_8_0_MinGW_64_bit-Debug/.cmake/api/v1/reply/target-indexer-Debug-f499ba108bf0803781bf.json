@@ -41,13 +41,13 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 37,
+				"line" : 41,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 28,
+				"line" : 32,
 				"parent" : 0
 			},
 			{
@@ -174,18 +174,22 @@
 				10,
 				12,
 				14,
-				16
+				16,
+				18,
+				20,
+				22,
+				24
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 0,
-			"id" : "indexer_autogen::@6890427a1f51a3e7e1df"
+			"id" : "indexer_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "indexer_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"backtrace" : 0,
+			"id" : "indexer_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "indexer::@6890427a1f51a3e7e1df",
@@ -258,7 +262,11 @@
 				10,
 				12,
 				14,
-				16
+				16,
+				18,
+				20,
+				22,
+				24
 			]
 		},
 		{
@@ -266,7 +274,7 @@
 			"sourceIndexes" : 
 			[
 				2,
-				17
+				25
 			]
 		},
 		{
@@ -279,14 +287,18 @@
 				9,
 				11,
 				13,
-				15
+				15,
+				17,
+				19,
+				21,
+				23
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				18
+				26
 			]
 		}
 	],
@@ -385,6 +397,50 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "enumoption.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "commandoption.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "commandoption.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "indexercommand.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "indexercommand.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "indexercommandoption.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "indexercommandoption.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "searchcommand.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "searchcommand.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

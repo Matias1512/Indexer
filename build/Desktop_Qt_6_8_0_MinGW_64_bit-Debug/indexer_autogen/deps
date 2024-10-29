@@ -436,7 +436,13 @@ indexer_autogen/timestamp: \
 	C:/Users/matia/Documents/Dev\ Logiciel/indexer/enumoption.h \
 	C:/Users/matia/Documents/Dev\ Logiciel/indexer/getcommand.cpp \
 	C:/Users/matia/Documents/Dev\ Logiciel/indexer/getcommand.h \
+	C:/Users/matia/Documents/Dev\ Logiciel/indexer/indexercommand.cpp \
+	C:/Users/matia/Documents/Dev\ Logiciel/indexer/indexercommand.h \
+	C:/Users/matia/Documents/Dev\ Logiciel/indexer/indexercommandoption.cpp \
+	C:/Users/matia/Documents/Dev\ Logiciel/indexer/indexercommandoption.h \
 	C:/Users/matia/Documents/Dev\ Logiciel/indexer/main.cpp \
 	C:/Users/matia/Documents/Dev\ Logiciel/indexer/pushcommand.cpp \
 	C:/Users/matia/Documents/Dev\ Logiciel/indexer/pushcommand.h \
+	C:/Users/matia/Documents/Dev\ Logiciel/indexer/searchcommand.cpp \
+	C:/Users/matia/Documents/Dev\ Logiciel/indexer/searchcommand.h \
 	C:/Qt/Tools/CMake_64/bin/cmake.exe
