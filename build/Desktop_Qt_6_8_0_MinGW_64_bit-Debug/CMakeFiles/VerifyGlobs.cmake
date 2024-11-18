@@ -53,6 +53,7 @@ set(OLD_GLOB
   "C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/EWIEGA46WW/moc_indexercommand.cpp"
   "C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/EWIEGA46WW/moc_indexercommandoption.cpp"
   "C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/EWIEGA46WW/moc_searchcommand.cpp"
+  "C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/EWIEGA46WW/moc_tokenizer.cpp"
   "C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/mocs_compilation.cpp"
   "C:/Users/matia/Documents/Dev Logiciel/indexer/clearcommand.cpp"
   "C:/Users/matia/Documents/Dev Logiciel/indexer/commandoption.cpp"
@@ -64,6 +65,7 @@ set(OLD_GLOB
   "C:/Users/matia/Documents/Dev Logiciel/indexer/main.cpp"
   "C:/Users/matia/Documents/Dev Logiciel/indexer/pushcommand.cpp"
   "C:/Users/matia/Documents/Dev Logiciel/indexer/searchcommand.cpp"
+  "C:/Users/matia/Documents/Dev Logiciel/indexer/tokenizer.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -95,6 +97,7 @@ set(OLD_GLOB
   "C:/Users/matia/Documents/Dev Logiciel/indexer/indexercommandoption.h"
   "C:/Users/matia/Documents/Dev Logiciel/indexer/pushcommand.h"
   "C:/Users/matia/Documents/Dev Logiciel/indexer/searchcommand.h"
+  "C:/Users/matia/Documents/Dev Logiciel/indexer/tokenizer.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

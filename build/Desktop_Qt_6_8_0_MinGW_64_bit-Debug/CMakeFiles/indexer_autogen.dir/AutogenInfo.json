@@ -225,6 +225,12 @@
 			"MU",
 			"EWIEGA46WW/moc_searchcommand.cpp",
 			null
+		],
+		[
+			"C:/Users/matia/Documents/Dev Logiciel/indexer/tokenizer.h",
+			"MU",
+			"EWIEGA46WW/moc_tokenizer.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -346,6 +352,11 @@
 		],
 		[
 			"C:/Users/matia/Documents/Dev Logiciel/indexer/searchcommand.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/matia/Documents/Dev Logiciel/indexer/tokenizer.cpp",
 			"MU",
 			null
 		]

@@ -6,4 +6,4 @@
 #include "EWIEGA46WW/moc_enumoption.cpp"
 #include "EWIEGA46WW/moc_indexercommand.cpp"
 #include "EWIEGA46WW/moc_indexercommandoption.cpp"
-#include "EWIEGA46WW/moc_searchcommand.cpp"
+#include "EWIEGA46WW/moc_tokenizer.cpp"
