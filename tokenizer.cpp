@@ -27,7 +27,7 @@ QMap<QString, QString> tokenizer::tokenizerCommand(QString command){
     QList<QString> allOptions = { "LAST_MODIFIED", "CREATED", "MAX_SIZE", "MIN_SIZE", "SIZE", "EXT", "TYPE"};
     QList<QString> allSpecifitions = { "BETWEEN", "AND", "OR", "SINCE LAST"};
     QList<QString> allTimeType = { "MINUTES", "HOURS", "DAYS", "MONTHS", "YEAR"};
-    QList<QString> allFileType = {"IMAGE","TEST","EXE"};
+    QList<QString> allFileType = {"IMAGE","TEXT","EXE"};
     //type le premier parametre -> sa doit etre une commande
     if(allCommandAccepted.contains(commandParts[0].toUpper())){
         token[commandParts[0]] = "COMMANDE";
