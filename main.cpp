@@ -1,10 +1,72 @@
 #include <QCoreApplication>
 #include <QLocale>
 #include <QTranslator>
+#include <QDebug> // Pour utiliser qDebug()
+#include "indexer.h"
+#include "tokenizer.h"
+
+void testIndex(){
+
+    Indexer indexer;
+    indexer.start();
+
+    indexStatus status = indexer.getStatus();
+
+    if(status == indexStatus::INDEXING){
+        qDebug() << "Index start OK 1";
+    }
+    else{
+        qDebug() << "Index start ECHEC 1";
+    }
+
+
+    if(status == indexStatus::STOPPED){
+        qDebug() << "Index stop OK 2";
+    }
+    else{
+        qDebug() << "Index stop ECHEC 2";
+    }
+}
 
 int main(int argc, char *argv[])
 {
+
+    //testIndex();
+
+    tokenizer token;
+
+    token.tokenizerCommand("SEARCH \"testme please\" LAST_MODIFIED:BETWEEN 2 days and 3 days CREATED:31/12/2020 MAX_SIZE:10M MIN_SIZE:1M SIZE:BETWEEN 10M AND 20M EXT:txt,doc,xlsx TYPE:image OR text");
+
+
+    /*
+    // Test de commandAdd, exemple :  'Add WHITELIST "toto"'
+    CommandOption whiteListOption("WHITELIST");
+
+    CommandAdd commandAdd;
+    commandAdd.setCommandOption(whiteListOption);
+    commandAdd.setArgument("toto");
+    QString SqlAdd = commandAdd.toSQL();
+
+    if(SqlAdd == "INSERT INTO WHITELIST (arguments VALUES ('toto')"){
+        qDebug() << "Commande OK";
+    }
+    else{
+        qDebug() << "Commande ECHEC";
+    }
+
+    /*
     QCoreApplication a(argc, argv);
+
+    // Vérifie si des arguments ont été passés
+    if (argc < 2) {
+        qDebug() << "Aucun argument fourni.";
+        return 1; // Indique une erreur
+    }
+
+    // Imprime les arguments
+    for (int i = 1; i < argc; ++i) {
+        qDebug() << "Argument" << i << ":" << argv[i];
+    }
 
     QTranslator translator;
     const QStringList uiLanguages = QLocale::system().uiLanguages();
@@ -16,16 +78,7 @@ int main(int argc, char *argv[])
         }
     }
 
-    // Set up code that uses the Qt event loop here.
-    // Call a.quit() or a.exit() to quit the application.
-    // A not very useful example would be including
-    // #include <QTimer>
-    // near the top of the file and calling
-    // QTimer::singleShot(5000, &a, &QCoreApplication::quit);
-    // which quits the application after 5 seconds.
-
-    // If you do not need a running Qt event loop, remove the call
-    // to a.exec() or use the Non-Qt Plain C++ Application template.
-
     return a.exec();
+
+*/
 }
