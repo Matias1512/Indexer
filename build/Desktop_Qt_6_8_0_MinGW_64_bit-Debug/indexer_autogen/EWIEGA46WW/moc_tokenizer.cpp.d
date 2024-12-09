@@ -1,8 +1,9 @@
-C:/Users/matia/Documents/Dev\ Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/EWIEGA46WW/moc_tokenizer.cpp: C:/Users/matia/Documents/Dev\ Logiciel/indexer/tokenizer.h \
-  C:/Users/matia/Documents/Dev\ Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/moc_predefs.h \
+C:/Users/matia/Documents/Dev\ Logiciel/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/EWIEGA46WW/moc_tokenizer.cpp: C:/Users/matia/Documents/Dev\ Logiciel/Indexer/tokenizer.h \
+  C:/Users/matia/Documents/Dev\ Logiciel/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/moc_predefs.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/QMap \
   C:/Qt/6.8.0/mingw_64/include/QtCore/QObject \
   C:/Qt/6.8.0/mingw_64/include/QtCore/QRegularExpression \
+  C:/Qt/6.8.0/mingw_64/include/QtCore/QString \
   C:/Qt/6.8.0/mingw_64/include/QtCore/QStringList \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20memory.h \
@@ -321,4 +322,5 @@ C:/Users/matia/Documents/Dev\ Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_b
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sys/types.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
-  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
+  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
+  C:/Users/matia/Documents/Dev\ Logiciel/Indexer/token.h

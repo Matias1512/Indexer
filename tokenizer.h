@@ -4,6 +4,7 @@
 #include <QRegularExpression>
 #include <QMap>
 #include <QObject>
+#include "token.h"
 
 class tokenizer : public QObject
 {
@@ -11,7 +12,7 @@ class tokenizer : public QObject
 public:
     explicit tokenizer(QObject *parent = nullptr);
 
-    QMap<QString, QString> tokenizerCommand(QString command);
+    QList<Token> tokenizerCommand(QString command);
 
 signals:
 };

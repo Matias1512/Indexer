@@ -29,6 +29,7 @@ add_executable(indexer
   indexercommandoption.h indexercommandoption.cpp
   searchcommand.h searchcommand.cpp
   tokenizer.h tokenizer.cpp
+  token.h token.cpp
 )
 target_link_libraries(indexer Qt${QT_VERSION_MAJOR}::Core)
 

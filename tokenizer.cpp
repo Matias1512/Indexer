@@ -1,18 +1,19 @@
+
 #include "tokenizer.h"
 #include <QStringList>
 #include <QRegularExpression>
 #include <QMap>
 #include <QDebug>
+#include "token.h"
 
 tokenizer::tokenizer(QObject *parent)
     : QObject{parent}
 {}
 
-QMap<QString, QString> tokenizer::tokenizerCommand(QString command){
-    QMap<QString, QString> token;
+QList<Token> tokenizer::tokenizerCommand(QString command){
 
     //Traiter le token (∩^o^)⊃━☆
-    QStringList commandPart = command.split(QRegularExpression("\\s+(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)"), Qt::SkipEmptyParts);
+    QStringList commandPartWithDoublePoint = command.split(QRegularExpression("\\s+(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)"), Qt::SkipEmptyParts);
 
     QRegularExpression regex(R"((?:"[^"]*"|[^"\s:]+))");
     QRegularExpressionMatchIterator it = regex.globalMatch(command);
@@ -23,6 +24,9 @@ QMap<QString, QString> tokenizer::tokenizerCommand(QString command){
         commandParts << match.captured(0);
     }
 
+
+    QList<Token> tokenList;
+
     QList<QString> allCommandAccepted = { "SEARCH", "INDEXER", "GET", "ADD", "PUSH", "CLEAR" };
     QList<QString> allOptions = { "LAST_MODIFIED", "CREATED", "MAX_SIZE", "MIN_SIZE", "SIZE", "EXT", "TYPE"};
     QList<QString> allSpecifitions = { "BETWEEN", "AND", "OR", "SINCE LAST"};
@@ -30,9 +34,9 @@ QMap<QString, QString> tokenizer::tokenizerCommand(QString command){
     QList<QString> allFileType = {"IMAGE","TEXT","EXE"};
     //type le premier parametre -> sa doit etre une commande
     if(allCommandAccepted.contains(commandParts[0].toUpper())){
-        token[commandParts[0]] = "COMMANDE";
+        tokenList.append(Token(commandParts[0], "COMMANDE"));
     } else {
-        token[commandParts[0]] = nullptr;
+        tokenList.append(Token(commandParts[0], nullptr));
     }
 
     QRegularExpression regexSizeSpec("^[0-9].*[KMG]$");
@@ -44,30 +48,33 @@ QMap<QString, QString> tokenizer::tokenizerCommand(QString command){
         for (int i = 1; i < commandParts.length(); i++) {
             commandParts[i].toInt(&isInteger);
             if(commandParts[i].startsWith("\"") && commandParts[i].endsWith("\"")){
-                token[commandParts[i]] = "string";
+                tokenList.append( Token(commandParts[i], "string"));
             } else if (allOptions.contains(commandParts[i].toUpper())) {
-                token[commandParts[i]] = "options";
+                tokenList.append( Token(commandParts[i], "options"));
             } else if (allSpecifitions.contains(commandParts[i].toUpper())) {
-                token[commandParts[i]] = "specification";
+                tokenList.append( Token(commandParts[i], "specification"));
             } else if (regexSizeSpec.match(commandParts[i]).hasMatch()) {
-                token[commandParts[i]] = "SizeSpec";
+                tokenList.append( Token(commandParts[i], "SizeSpec"));
             } else if (allTimeType.contains(commandParts[i].toUpper())) {
-                token[commandParts[i]] = "TypeTime";
+                tokenList.append( Token(commandParts[i], "TypeTime"));
             } else if (commandParts[i].contains(',')){
-                token[commandParts[i]] = "ExtListSpec";
+                tokenList.append( Token(commandParts[i], "ExtListSpec"));
             } else if (allFileType.contains(commandParts[i].toUpper())){
-                token[commandParts[i]] = "FileType";
+                tokenList.append( Token(commandParts[i], "FileType"));
             } else if (regexDate.match(commandParts[i]).hasMatch()) {
-                token[commandParts[i]] = "Date";
+                tokenList.append( Token(commandParts[i], "Date"));
             } else if (isInteger){
-                token[commandParts[i]] = "int";
+                tokenList.append( Token(commandParts[i], "int"));
                 isInteger = false;
             } else {
-                token[commandParts[i]] = nullptr;
+                tokenList.append( Token(commandParts[i], nullptr));
             }
         }
     }
 
-     qDebug() << token;
-    return token;
+    for (const Token &token : tokenList) {
+        qDebug() << "Key:" << token.getKey() << ", Value:" << token.getValue();
+    }
+
+    return tokenList;
 }

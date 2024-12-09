@@ -1,18 +1,18 @@
 {
 	"AUTOGEN_COMMAND_LINE_LENGTH_MAX" : 32000,
-	"BUILD_DIR" : "C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen",
-	"CMAKE_BINARY_DIR" : "C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug",
-	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug",
-	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/matia/Documents/Dev Logiciel/indexer",
+	"BUILD_DIR" : "C:/Users/matia/Documents/Dev Logiciel/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Users/matia/Documents/Dev Logiciel/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/matia/Documents/Dev Logiciel/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/matia/Documents/Dev Logiciel/Indexer",
 	"CMAKE_EXECUTABLE" : "C:/Qt/Tools/CMake_64/bin/cmake.exe",
 	"CMAKE_LIST_FILES" : 
 	[
-		"C:/Users/matia/Documents/Dev Logiciel/indexer/CMakeLists.txt",
-		"C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake",
-		"C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeSystem.cmake",
+		"C:/Users/matia/Documents/Dev Logiciel/Indexer/CMakeLists.txt",
+		"C:/Users/matia/Documents/Dev Logiciel/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake",
+		"C:/Users/matia/Documents/Dev Logiciel/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeSystem.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake",
-		"C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeCXXCompiler.cmake",
+		"C:/Users/matia/Documents/Dev Logiciel/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeCXXCompiler.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake",
@@ -25,7 +25,7 @@
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake",
-		"C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeRCCompiler.cmake",
+		"C:/Users/matia/Documents/Dev Logiciel/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeRCCompiler.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeRCInformation.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake",
@@ -154,88 +154,94 @@
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeParseArguments.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/GNUInstallDirs.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "C:/Users/matia/Documents/Dev Logiciel/indexer",
+	"CMAKE_SOURCE_DIR" : "C:/Users/matia/Documents/Dev Logiciel/Indexer",
 	"CROSS_CONFIG" : false,
-	"DEP_FILE" : "C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/deps",
+	"DEP_FILE" : "C:/Users/matia/Documents/Dev Logiciel/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "indexer_autogen/timestamp",
 	"HEADERS" : 
 	[
 		[
-			"C:/Users/matia/Documents/Dev Logiciel/indexer/abstractcommand.h",
+			"C:/Users/matia/Documents/Dev Logiciel/Indexer/abstractcommand.h",
 			"MU",
 			"EWIEGA46WW/moc_abstractcommand.cpp",
 			null
 		],
 		[
-			"C:/Users/matia/Documents/Dev Logiciel/indexer/abstractcommandwithoptions.h",
+			"C:/Users/matia/Documents/Dev Logiciel/Indexer/abstractcommandwithoptions.h",
 			"MU",
 			"EWIEGA46WW/moc_abstractcommandwithoptions.cpp",
 			null
 		],
 		[
-			"C:/Users/matia/Documents/Dev Logiciel/indexer/addcommand.h",
+			"C:/Users/matia/Documents/Dev Logiciel/Indexer/addcommand.h",
 			"MU",
 			"EWIEGA46WW/moc_addcommand.cpp",
 			null
 		],
 		[
-			"C:/Users/matia/Documents/Dev Logiciel/indexer/clearcommand.h",
+			"C:/Users/matia/Documents/Dev Logiciel/Indexer/clearcommand.h",
 			"MU",
 			"EWIEGA46WW/moc_clearcommand.cpp",
 			null
 		],
 		[
-			"C:/Users/matia/Documents/Dev Logiciel/indexer/commandoption.h",
+			"C:/Users/matia/Documents/Dev Logiciel/Indexer/commandoption.h",
 			"MU",
 			"EWIEGA46WW/moc_commandoption.cpp",
 			null
 		],
 		[
-			"C:/Users/matia/Documents/Dev Logiciel/indexer/enumoption.h",
+			"C:/Users/matia/Documents/Dev Logiciel/Indexer/enumoption.h",
 			"MU",
 			"EWIEGA46WW/moc_enumoption.cpp",
 			null
 		],
 		[
-			"C:/Users/matia/Documents/Dev Logiciel/indexer/getcommand.h",
+			"C:/Users/matia/Documents/Dev Logiciel/Indexer/getcommand.h",
 			"MU",
 			"EWIEGA46WW/moc_getcommand.cpp",
 			null
 		],
 		[
-			"C:/Users/matia/Documents/Dev Logiciel/indexer/indexercommand.h",
+			"C:/Users/matia/Documents/Dev Logiciel/Indexer/indexercommand.h",
 			"MU",
 			"EWIEGA46WW/moc_indexercommand.cpp",
 			null
 		],
 		[
-			"C:/Users/matia/Documents/Dev Logiciel/indexer/indexercommandoption.h",
+			"C:/Users/matia/Documents/Dev Logiciel/Indexer/indexercommandoption.h",
 			"MU",
 			"EWIEGA46WW/moc_indexercommandoption.cpp",
 			null
 		],
 		[
-			"C:/Users/matia/Documents/Dev Logiciel/indexer/pushcommand.h",
+			"C:/Users/matia/Documents/Dev Logiciel/Indexer/pushcommand.h",
 			"MU",
 			"EWIEGA46WW/moc_pushcommand.cpp",
 			null
 		],
 		[
-			"C:/Users/matia/Documents/Dev Logiciel/indexer/searchcommand.h",
+			"C:/Users/matia/Documents/Dev Logiciel/Indexer/searchcommand.h",
 			"MU",
 			"EWIEGA46WW/moc_searchcommand.cpp",
 			null
 		],
 		[
-			"C:/Users/matia/Documents/Dev Logiciel/indexer/tokenizer.h",
+			"C:/Users/matia/Documents/Dev Logiciel/Indexer/token.h",
+			"MU",
+			"EWIEGA46WW/moc_token.cpp",
+			null
+		],
+		[
+			"C:/Users/matia/Documents/Dev Logiciel/Indexer/tokenizer.h",
 			"MU",
 			"EWIEGA46WW/moc_tokenizer.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/include",
-	"MOC_COMPILATION_FILE" : "C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "C:/Users/matia/Documents/Dev Logiciel/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/include",
+	"MOC_COMPILATION_FILE" : "C:/Users/matia/Documents/Dev Logiciel/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"MINGW_HAS_SECURE_API=1",
@@ -286,77 +292,78 @@
 		"-c",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "C:/Users/matia/Documents/Dev Logiciel/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 8,
-	"PARSE_CACHE_FILE" : "C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/indexer_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "C:/Users/matia/Documents/Dev Logiciel/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/indexer_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "C:/Qt/6.8.0/mingw_64/bin/moc.exe",
 	"QT_UIC_EXECUTABLE" : "",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 8,
-	"SETTINGS_FILE" : "C:/Users/matia/Documents/Dev Logiciel/indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/indexer_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "C:/Users/matia/Documents/Dev Logiciel/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/indexer_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
-			"C:/Users/matia/Documents/Dev Logiciel/indexer/abstractcommand.cpp",
+			"C:/Users/matia/Documents/Dev Logiciel/Indexer/abstractcommand.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/matia/Documents/Dev Logiciel/indexer/abstractcommandwithoptions.cpp",
+			"C:/Users/matia/Documents/Dev Logiciel/Indexer/abstractcommandwithoptions.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/matia/Documents/Dev Logiciel/indexer/addcommand.cpp",
+			"C:/Users/matia/Documents/Dev Logiciel/Indexer/addcommand.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/matia/Documents/Dev Logiciel/indexer/clearcommand.cpp",
+			"C:/Users/matia/Documents/Dev Logiciel/Indexer/clearcommand.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/matia/Documents/Dev Logiciel/indexer/commandoption.cpp",
+			"C:/Users/matia/Documents/Dev Logiciel/Indexer/commandoption.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/matia/Documents/Dev Logiciel/indexer/enumoption.cpp",
+			"C:/Users/matia/Documents/Dev Logiciel/Indexer/enumoption.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/matia/Documents/Dev Logiciel/indexer/getcommand.cpp",
+			"C:/Users/matia/Documents/Dev Logiciel/Indexer/getcommand.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/matia/Documents/Dev Logiciel/indexer/indexercommand.cpp",
+			"C:/Users/matia/Documents/Dev Logiciel/Indexer/indexercommand.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/matia/Documents/Dev Logiciel/indexer/indexercommandoption.cpp",
+			"C:/Users/matia/Documents/Dev Logiciel/Indexer/indexercommandoption.cpp",
 			"MU",
 			null
 		],
-		[ "C:/Users/matia/Documents/Dev Logiciel/indexer/main.cpp", "MU", null ],
+		[ "C:/Users/matia/Documents/Dev Logiciel/Indexer/main.cpp", "MU", null ],
 		[
-			"C:/Users/matia/Documents/Dev Logiciel/indexer/pushcommand.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/matia/Documents/Dev Logiciel/indexer/searchcommand.cpp",
+			"C:/Users/matia/Documents/Dev Logiciel/Indexer/pushcommand.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/matia/Documents/Dev Logiciel/indexer/tokenizer.cpp",
+			"C:/Users/matia/Documents/Dev Logiciel/Indexer/searchcommand.cpp",
+			"MU",
+			null
+		],
+		[ "C:/Users/matia/Documents/Dev Logiciel/Indexer/token.cpp", "MU", null ],
+		[
+			"C:/Users/matia/Documents/Dev Logiciel/Indexer/tokenizer.cpp",
 			"MU",
 			null
 		]
