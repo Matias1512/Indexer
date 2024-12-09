@@ -17,19 +17,28 @@ set(TS_FILES indexer_fr_FR.ts)
 add_executable(indexer
   main.cpp
   ${TS_FILES}
-  abstractcommand.h abstractcommand.cpp
-  abstractcommandwithoptions.h abstractcommandwithoptions.cpp
+
+
+
+
+
+
+
+
+
+
+  searchcommand.h searchcommand.cpp
+  tokenizer.h tokenizer.cpp
+  token.h token.cpp
+  Command.h
+  factory.h
+  indexercommand.h indexercommand.cpp
   getcommand.h getcommand.cpp
   addcommand.h addcommand.cpp
   pushcommand.h pushcommand.cpp
   clearcommand.h clearcommand.cpp
-  enumoption.h enumoption.cpp
-  commandoption.h commandoption.cpp
-  indexercommand.h indexercommand.cpp
-  indexercommandoption.h indexercommandoption.cpp
-  searchcommand.h searchcommand.cpp
-  tokenizer.h tokenizer.cpp
-  token.h token.cpp
+  fsm.h fsm.cpp
+
 )
 target_link_libraries(indexer Qt${QT_VERSION_MAJOR}::Core)
 

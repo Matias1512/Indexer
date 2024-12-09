@@ -2,13 +2,16 @@
 #define ADDCOMMAND_H
 
 #include <QObject>
-#include "abstractcommandwithoptions.h"
+#include "Command.h"
 
-class AddCommand : public AbstractCommandWithOptions
+class AddCommand : public Command
 {
     Q_OBJECT
 public:
-    AddCommand(QString name, CommandOption* commandOption, QObject *parent = nullptr);
+    void execute() const override
+    {
+        qDebug() << "Executing Add Command";
+    }
 };
 
 #endif // ADDCOMMAND_H

@@ -2,12 +2,16 @@
 #define GETCOMMAND_H
 
 #include <QObject>
-#include "abstractcommandwithoptions.h"
+#include "Command.h"
 
-class GetCommand : public AbstractCommandWithOptions
+class GetCommand : public Command
 {
+    Q_OBJECT
 public:
-    explicit GetCommand(QString name, CommandOption* commandOption, QObject *parent = nullptr);
+    void execute() const override
+    {
+        qDebug() << "Executing Get Command";
+    }
 };
 
 #endif // GETCOMMAND_H

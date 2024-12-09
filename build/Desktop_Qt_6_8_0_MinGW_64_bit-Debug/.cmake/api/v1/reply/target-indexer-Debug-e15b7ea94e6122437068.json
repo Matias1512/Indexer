@@ -41,13 +41,13 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 43,
+				"line" : 52,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 34,
+				"line" : 43,
 				"parent" : 0
 			},
 			{
@@ -171,27 +171,23 @@
 				4,
 				6,
 				8,
-				10,
 				12,
 				14,
 				16,
 				18,
 				20,
-				22,
-				24,
-				26,
-				28
+				22
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"id" : "indexer_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "indexer_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "indexer_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "indexer::@6890427a1f51a3e7e1df",
@@ -261,16 +257,12 @@
 				4,
 				6,
 				8,
-				10,
 				12,
 				14,
 				16,
 				18,
 				20,
-				22,
-				24,
-				26,
-				28
+				22
 			]
 		},
 		{
@@ -278,7 +270,7 @@
 			"sourceIndexes" : 
 			[
 				2,
-				29
+				23
 			]
 		},
 		{
@@ -289,22 +281,20 @@
 				5,
 				7,
 				9,
+				10,
 				11,
 				13,
 				15,
 				17,
 				19,
-				21,
-				23,
-				25,
-				27
+				21
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				30
+				24
 			]
 		}
 	],
@@ -330,24 +320,56 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "abstractcommand.h",
+			"path" : "searchcommand.h",
 			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "abstractcommand.cpp",
+			"path" : "searchcommand.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "abstractcommandwithoptions.h",
+			"path" : "tokenizer.h",
 			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "abstractcommandwithoptions.cpp",
+			"path" : "tokenizer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "token.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "token.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Command.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "factory.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "indexercommand.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "indexercommand.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -396,79 +418,13 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "enumoption.h",
+			"path" : "fsm.h",
 			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "enumoption.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "commandoption.h",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "commandoption.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "indexercommand.h",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "indexercommand.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "indexercommandoption.h",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "indexercommandoption.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "searchcommand.h",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "searchcommand.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "tokenizer.h",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "tokenizer.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "token.h",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "token.cpp",
+			"path" : "fsm.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

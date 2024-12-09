@@ -41,8 +41,6 @@ endif()
 # _directory_contents at C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/matia/Documents/Dev Logiciel/Indexer/*.cpp")
 set(OLD_GLOB
-  "C:/Users/matia/Documents/Dev Logiciel/Indexer/abstractcommand.cpp"
-  "C:/Users/matia/Documents/Dev Logiciel/Indexer/abstractcommandwithoptions.cpp"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/addcommand.cpp"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CompilerIdCXX/CMakeCXXCompilerId.cpp"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/EWIEGA46WW/moc_abstractcommand.cpp"
@@ -63,12 +61,10 @@ set(OLD_GLOB
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/EWIEGA46WW/moc_tokenizer.cpp"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/mocs_compilation.cpp"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/clearcommand.cpp"
-  "C:/Users/matia/Documents/Dev Logiciel/Indexer/commandoption.cpp"
-  "C:/Users/matia/Documents/Dev Logiciel/Indexer/enumoption.cpp"
+  "C:/Users/matia/Documents/Dev Logiciel/Indexer/fsm.cpp"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/getcommand.cpp"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/indexer.cpp"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/indexercommand.cpp"
-  "C:/Users/matia/Documents/Dev Logiciel/Indexer/indexercommandoption.cpp"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/main.cpp"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/pushcommand.cpp"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/searchcommand.cpp"
@@ -92,17 +88,15 @@ endif()
 # _directory_contents at C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/matia/Documents/Dev Logiciel/Indexer/*.h")
 set(OLD_GLOB
-  "C:/Users/matia/Documents/Dev Logiciel/Indexer/abstractcommand.h"
-  "C:/Users/matia/Documents/Dev Logiciel/Indexer/abstractcommandwithoptions.h"
+  "C:/Users/matia/Documents/Dev Logiciel/Indexer/Command.h"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/addcommand.h"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/moc_predefs.h"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/clearcommand.h"
-  "C:/Users/matia/Documents/Dev Logiciel/Indexer/commandoption.h"
-  "C:/Users/matia/Documents/Dev Logiciel/Indexer/enumoption.h"
+  "C:/Users/matia/Documents/Dev Logiciel/Indexer/factory.h"
+  "C:/Users/matia/Documents/Dev Logiciel/Indexer/fsm.h"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/getcommand.h"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/indexer.h"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/indexercommand.h"
-  "C:/Users/matia/Documents/Dev Logiciel/Indexer/indexercommandoption.h"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/pushcommand.h"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/searchcommand.h"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/token.h"

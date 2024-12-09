@@ -2,12 +2,16 @@
 #define PUSHCOMMAND_H
 
 #include <QObject>
-#include "abstractcommandwithoptions.h"
+#include "Command.h"
 
-class PushCommand : public AbstractCommandWithOptions
+class PushCommand : public Command
 {
+    Q_OBJECT
 public:
-    PushCommand(QString name, CommandOption* commandOption, QObject *parent = nullptr);
+    void execute() const override
+    {
+        qDebug() << "Executing Push Command";
+    }
 };
 
 #endif // PUSHCOMMAND_H

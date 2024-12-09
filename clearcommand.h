@@ -2,12 +2,16 @@
 #define CLEARCOMMAND_H
 
 #include <QObject>
-#include "abstractcommandwithoptions.h"
+#include "Command.h"
 
-class ClearCommand : public AbstractCommandWithOptions
+class ClearCommand : public Command
 {
+    Q_OBJECT
 public:
-    ClearCommand(QString name, CommandOption* commandOption, QObject *parent = nullptr);
+    void execute() const override
+    {
+        qDebug() << "Executing Clear Command";
+    }
 };
 
 #endif // CLEARCOMMAND_H

@@ -2,20 +2,16 @@
 #define INDEXERCOMMAND_H
 
 #include <QObject>
-#include "abstractcommand.h"
-#include "indexercommandoption.h"
+#include "Command.h"
 
-class IndexerCommand : public AbstractCommand
+class IndexerCommand : public Command
 {
     Q_OBJECT
 public:
-    explicit IndexerCommand(QString name, IndexerCommandOption* indexerCommandOption, QObject *parent = nullptr);
-
-    void setIndexerCommandOption(IndexerCommandOption* indexerCommandOption);
-
-private:
-    IndexerCommandOption* indexerCommandOption_;
-
+    void execute() const override
+    {
+        qDebug() << "Executing Indexer Command";
+    }
 };
 
 #endif // INDEXERCOMMAND_H

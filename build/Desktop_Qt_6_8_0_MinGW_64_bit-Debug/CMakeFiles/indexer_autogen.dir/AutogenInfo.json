@@ -161,15 +161,9 @@
 	"HEADERS" : 
 	[
 		[
-			"C:/Users/matia/Documents/Dev Logiciel/Indexer/abstractcommand.h",
+			"C:/Users/matia/Documents/Dev Logiciel/Indexer/Command.h",
 			"MU",
-			"EWIEGA46WW/moc_abstractcommand.cpp",
-			null
-		],
-		[
-			"C:/Users/matia/Documents/Dev Logiciel/Indexer/abstractcommandwithoptions.h",
-			"MU",
-			"EWIEGA46WW/moc_abstractcommandwithoptions.cpp",
+			"EWIEGA46WW/moc_Command.cpp",
 			null
 		],
 		[
@@ -185,15 +179,15 @@
 			null
 		],
 		[
-			"C:/Users/matia/Documents/Dev Logiciel/Indexer/commandoption.h",
+			"C:/Users/matia/Documents/Dev Logiciel/Indexer/factory.h",
 			"MU",
-			"EWIEGA46WW/moc_commandoption.cpp",
+			"EWIEGA46WW/moc_factory.cpp",
 			null
 		],
 		[
-			"C:/Users/matia/Documents/Dev Logiciel/Indexer/enumoption.h",
+			"C:/Users/matia/Documents/Dev Logiciel/Indexer/fsm.h",
 			"MU",
-			"EWIEGA46WW/moc_enumoption.cpp",
+			"EWIEGA46WW/moc_fsm.cpp",
 			null
 		],
 		[
@@ -206,12 +200,6 @@
 			"C:/Users/matia/Documents/Dev Logiciel/Indexer/indexercommand.h",
 			"MU",
 			"EWIEGA46WW/moc_indexercommand.cpp",
-			null
-		],
-		[
-			"C:/Users/matia/Documents/Dev Logiciel/Indexer/indexercommandoption.h",
-			"MU",
-			"EWIEGA46WW/moc_indexercommandoption.cpp",
 			null
 		],
 		[
@@ -306,16 +294,6 @@
 	"SOURCES" : 
 	[
 		[
-			"C:/Users/matia/Documents/Dev Logiciel/Indexer/abstractcommand.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/matia/Documents/Dev Logiciel/Indexer/abstractcommandwithoptions.cpp",
-			"MU",
-			null
-		],
-		[
 			"C:/Users/matia/Documents/Dev Logiciel/Indexer/addcommand.cpp",
 			"MU",
 			null
@@ -325,16 +303,7 @@
 			"MU",
 			null
 		],
-		[
-			"C:/Users/matia/Documents/Dev Logiciel/Indexer/commandoption.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/matia/Documents/Dev Logiciel/Indexer/enumoption.cpp",
-			"MU",
-			null
-		],
+		[ "C:/Users/matia/Documents/Dev Logiciel/Indexer/fsm.cpp", "MU", null ],
 		[
 			"C:/Users/matia/Documents/Dev Logiciel/Indexer/getcommand.cpp",
 			"MU",
@@ -342,11 +311,6 @@
 		],
 		[
 			"C:/Users/matia/Documents/Dev Logiciel/Indexer/indexercommand.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/matia/Documents/Dev Logiciel/Indexer/indexercommandoption.cpp",
 			"MU",
 			null
 		],

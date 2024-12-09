@@ -2,6 +2,7 @@
 #define TOKEN_H
 
 #include <QString>
+#include <QObject>
 
 class Token
 {
