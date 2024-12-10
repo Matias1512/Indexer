@@ -11,22 +11,13 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core LinguistTools)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core LinguistTools)
+find_package(Qt6 REQUIRED COMPONENTS Core Sql)
 
 set(TS_FILES indexer_fr_FR.ts)
 
 add_executable(indexer
   main.cpp
   ${TS_FILES}
-
-
-
-
-
-
-
-
-
-
   searchcommand.h searchcommand.cpp
   tokenizer.h tokenizer.cpp
   token.h token.cpp
@@ -38,9 +29,13 @@ add_executable(indexer
   pushcommand.h pushcommand.cpp
   clearcommand.h clearcommand.cpp
   fsm.h fsm.cpp
+  state.h state.cpp
+  transition.h transition.cpp
+  option.h
+  lastmodified.h lastmodified.cpp
 
 )
-target_link_libraries(indexer Qt${QT_VERSION_MAJOR}::Core)
+target_link_libraries(indexer Qt${QT_VERSION_MAJOR}::Core Qt6::Core Qt6::Sql)
 
 if(COMMAND qt_create_translation)
     qt_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${TS_FILES})

@@ -29,7 +29,6 @@ QList<Token> tokenizer::tokenizerCommand(QString command){
 
     QList<QString> allCommandAccepted = { "SEARCH", "INDEXER", "GET", "ADD", "PUSH", "CLEAR" };
     QList<QString> allOptions = { "LAST_MODIFIED", "CREATED", "MAX_SIZE", "MIN_SIZE", "SIZE", "EXT", "TYPE"};
-    QList<QString> allSpecifitions = { "BETWEEN", "AND", "OR", "SINCE LAST"};
     QList<QString> allTimeType = { "MINUTES", "HOURS", "DAYS", "MONTHS", "YEAR"};
     QList<QString> allFileType = {"IMAGE","TEXT","EXE"};
     //type le premier parametre -> sa doit etre une commande
@@ -51,8 +50,18 @@ QList<Token> tokenizer::tokenizerCommand(QString command){
                 tokenList.append( Token(commandParts[i], "string"));
             } else if (allOptions.contains(commandParts[i].toUpper())) {
                 tokenList.append( Token(commandParts[i], "options"));
-            } else if (allSpecifitions.contains(commandParts[i].toUpper())) {
-                tokenList.append( Token(commandParts[i], "specification"));
+            } else if (commandParts[i].toUpper() == "BETWEEN") {
+                tokenList.append( Token(commandParts[i], "BETWEEN"));
+            } else if (commandParts[i].toUpper() == "AND") {
+                tokenList.append( Token(commandParts[i], "AND"));
+            } else if (commandParts[i].toUpper() == "OR") {
+                tokenList.append( Token(commandParts[i], "OR"));
+            } else if (commandParts[i].toUpper() == "SINCE") {
+                tokenList.append( Token(commandParts[i], "SINCE"));
+            } else if (commandParts[i].toUpper() == "LAST") {
+                tokenList.append( Token(commandParts[i], "LAST"));
+            } else if (commandParts[i].toUpper() == "AGO") {
+                tokenList.append( Token(commandParts[i], "AGO"));
             } else if (regexSizeSpec.match(commandParts[i]).hasMatch()) {
                 tokenList.append( Token(commandParts[i], "SizeSpec"));
             } else if (allTimeType.contains(commandParts[i].toUpper())) {

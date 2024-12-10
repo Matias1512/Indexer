@@ -54,6 +54,7 @@ set(OLD_GLOB
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/EWIEGA46WW/moc_getcommand.cpp"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/EWIEGA46WW/moc_indexercommand.cpp"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/EWIEGA46WW/moc_indexercommandoption.cpp"
+  "C:/Users/matia/Documents/Dev Logiciel/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/EWIEGA46WW/moc_lastmodified.cpp"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/EWIEGA46WW/moc_option.cpp"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/EWIEGA46WW/moc_pushcommand.cpp"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/EWIEGA46WW/moc_searchcommand.cpp"
@@ -65,11 +66,14 @@ set(OLD_GLOB
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/getcommand.cpp"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/indexer.cpp"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/indexercommand.cpp"
+  "C:/Users/matia/Documents/Dev Logiciel/Indexer/lastmodified.cpp"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/main.cpp"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/pushcommand.cpp"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/searchcommand.cpp"
+  "C:/Users/matia/Documents/Dev Logiciel/Indexer/state.cpp"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/token.cpp"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/tokenizer.cpp"
+  "C:/Users/matia/Documents/Dev Logiciel/Indexer/transition.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -97,10 +101,14 @@ set(OLD_GLOB
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/getcommand.h"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/indexer.h"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/indexercommand.h"
+  "C:/Users/matia/Documents/Dev Logiciel/Indexer/lastmodified.h"
+  "C:/Users/matia/Documents/Dev Logiciel/Indexer/option.h"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/pushcommand.h"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/searchcommand.h"
+  "C:/Users/matia/Documents/Dev Logiciel/Indexer/state.h"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/token.h"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/tokenizer.h"
+  "C:/Users/matia/Documents/Dev Logiciel/Indexer/transition.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

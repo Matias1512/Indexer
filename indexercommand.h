@@ -12,6 +12,9 @@ public:
     {
         qDebug() << "Executing Indexer Command";
     }
+    void createDatabase();
+    void indexDirectory(const QString &path);
+    void printDatabaseContents();
 };
 
 #endif // INDEXERCOMMAND_H
