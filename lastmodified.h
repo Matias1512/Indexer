@@ -10,34 +10,40 @@ private:
     QString dateSpec;
     QString dateMax;
     QString dateMin;
-    QString sinceLastDate;
+    QString numberSinceLastDate;
+    QString timeUnit;
     QString andOr;
 
+    QString formatTimeUnit(QString& timeUnit);
 public:
+
+    //CONSTRUCTEUR
     // Constructeur avec uniquement dateSpec
-    explicit LastModified(const QString& dateSpec)
-        : dateSpec(dateSpec), dateMax(""), dateMin(""), sinceLastDate("") {}
+    LastModified(const QString& dateSpec)
+        : dateSpec(dateSpec), dateMax(""), dateMin(""), numberSinceLastDate(""), timeUnit("") {}
 
     // Constructeur avec dateSpec, dateMin et dateMax
-    LastModified(const QString& dateSpec, const QString& dateMin, const QString& dateMax, const QString& andOr)
-        : dateSpec(dateSpec), dateMax(dateMax), dateMin(dateMin), andOr(andOr), sinceLastDate("") {}
+    LastModified(const QString& dateSpec, const QString& dateMin, const QString& dateMax, const QString& And)
+        : dateSpec(dateSpec), dateMax(dateMax), dateMin(dateMin), andOr(andOr), numberSinceLastDate(""), timeUnit("") {}
 
-    // Constructeur avec dateSpec et sinceLastDate
-    LastModified(const QString& dateSpec, const QString& sinceLastDate)
-        : dateSpec(dateSpec), dateMax(""), dateMin(""), sinceLastDate(sinceLastDate) {}
+    // Constructeur avec dateSpec et numberSinceLastDate
+    LastModified(const QString& dateSpec, const QString& numberSinceLastDate, const QString& timeUnit)
+        : dateSpec(dateSpec), dateMax(""), dateMin(""), numberSinceLastDate(numberSinceLastDate), timeUnit(timeUnit) {}
 
     // Méthodes pour récupérer les valeurs des paramètres
     QString getDateSpec() const { return dateSpec; }
     QString getDateMax() const { return dateMax; }
     QString getDateMin() const { return dateMin; }
-    QString getSinceLastDate() const { return sinceLastDate; }
+    QString getNumberSinceLastDate() const { return numberSinceLastDate; }
+    QString getTimeUnit() const { return timeUnit; }
     QString getAndOr() const { return andOr; }
 
     // Méthodes pour modifier les valeurs des paramètres
     void setDateSpec(const QString& value) { dateSpec = value; }
     void setDateMax(const QString& value) { dateMax = value; }
     void setDateMin(const QString& value) { dateMin = value; }
-    void setSinceLastDate(const QString& value) { sinceLastDate = value; }
+    void setNumberSinceLastDate(const QString& value) { numberSinceLastDate = value; }
+    void setTimeUnit(const QString& value) { timeUnit = value; }
     void setAndOr(const QString& value) { andOr = value; }
 
     QString formatDate(const QString& inputDate);

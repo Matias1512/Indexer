@@ -9,6 +9,7 @@
 #include "State.h"
 #include "Transition.h"
 #include "Fsm.h"
+#include "lastmodified.h"
 
 int main(int argc, char *argv[])
 {
@@ -86,6 +87,8 @@ int main(int argc, char *argv[])
 
     qDebug() << "File indexing complete.";
     **/
+    LastModified testlast("SINCE", "3", "DAYS");
+    qDebug() << testlast.getSQL(true,true);
 
     return a.exec();
 }

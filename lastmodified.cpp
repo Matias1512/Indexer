@@ -40,21 +40,50 @@ QString LastModified::formatDate(const QString& inputDate) {
 
 QString LastModified::getSQL(const bool isTheFirstOption, const bool isTheLastOption) {
     QString request = "";
+    bool isNumber;
+    this->dateSpec.toInt(&isNumber);
     //est la premier option
     if(isTheFirstOption) {
-        request = "WHERE lastModified ";
+        request = "WHERE date_column";
     }
         //a un between
     if(this->dateSpec == "BETWEEN") {
-        request += " BETWEEN " << this->dateMax << this->andOr << this->dateMin;
+        request.append(" BETWEEN " + formatDate(this->dateMin) + " AND " + formatDate(this->dateMax));
+    }   //a un since last
+    else if(this->dateSpec == "SINCE") {
+        //changer unit days -> day etc
+        this->formatTimeUnit(this->timeUnit);
+        request.append( " >= DATE_SUB(CURDATE(), INTERVAL " + this->numberSinceLastDate + " " + this->timeUnit + ")");
+    }
+        //est un number
+    else if(isNumber && !this->timeUnit.isEmpty()) {
+        this->formatTimeUnit(this->timeUnit);
+        request.append(" <= " + this->numberSinceLastDate + this->timeUnit);
+    }
+        //est une date
+    else {
+        request.append(" = " + formatDate(this->dateSpec));
     }
 
-        //a un since last
-
-        //est un number
-
-        //est une date
-
+    //est la dernière option
+    if(isTheLastOption){
+        request.append(";");
+    }
 //WHERE date_column BETWEEN '2023-01-01' AND '2023-12-31'
     return request;
+}
+
+
+// à mettre dans une autre fonction type datespec plus tard
+QString LastModified::formatTimeUnit(QString& timeUnit) {
+    if(timeUnit == "DAYS") {
+        timeUnit = "DAY";
+    } else if(timeUnit == "MINUTES") {
+        timeUnit = "MINUTE";
+    } else if(timeUnit == "HOURS") {
+        timeUnit = "HOUR";
+    } else if(timeUnit == "MONTHS") {
+        timeUnit = "MONTH";
+    }
+    return timeUnit;
 }
