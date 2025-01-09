@@ -90,5 +90,14 @@ int main(int argc, char *argv[])
     LastModified testlast("SINCE", "3", "DAYS");
     qDebug() << testlast.getSQL(true,true);
 
+    GetCommand testGet("WHITELIST");
+    qDebug() << testGet.getSQL();
+
+    AddCommand addTest1("WHITELIST", "blablabla/tamere.exe");
+    qDebug() << addTest1.getSQL();
+    QList<QString> listExt = { "exe", "jpg", "txt"};
+    AddCommand addTest2("WHITELIST", listExt);
+    qDebug() << addTest2.getSQL();
+
     return a.exec();
 }

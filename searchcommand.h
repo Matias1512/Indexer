@@ -10,11 +10,6 @@
 class SearchCommand : public Command
 {
 public:
-    void execute() const override
-    {
-        qDebug() << "Executing Search Command";
-    }
-
     QString getFileName() const {  return fileName;  }
 
     void setFileName(const QString &newFileName) { fileName = newFileName; }

@@ -7,11 +7,19 @@
 class GetCommand : public Command
 {
     Q_OBJECT
+
+private:
+    QString listFilter;
+
 public:
-    void execute() const override
-    {
-        qDebug() << "Executing Get Command";
-    }
+    GetCommand(const QString& listFilter)
+        : listFilter(listFilter){}
+    virtual QString getSQL() override;
+
+    QString getListFilter() const { return listFilter; }
+
+    void setListFilter(const QString& value) { listFilter = value; }
+
 };
 
 #endif // GETCOMMAND_H

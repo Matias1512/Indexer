@@ -1,3 +1,5 @@
 #include "getcommand.h"
 
-//GetCommand::GetCommand() {}
+QString GetCommand::getSQL() {
+    return QString("SELECT * FROM %1").arg(this->listFilter);
+}

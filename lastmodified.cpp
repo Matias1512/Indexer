@@ -45,6 +45,8 @@ QString LastModified::getSQL(const bool isTheFirstOption, const bool isTheLastOp
     //est la premier option
     if(isTheFirstOption) {
         request = "WHERE date_column";
+    } else {
+        request = "AND ";
     }
         //a un between
     if(this->dateSpec == "BETWEEN") {

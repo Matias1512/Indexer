@@ -16,6 +16,7 @@
 class Factory
 {
 public:
+    /*
     static Command* createCommand(const QString &commandName)
     {
         if (commandName == "SEARCH")
@@ -33,6 +34,7 @@ public:
 
         return nullptr; // Si la commande est invalide
     }
+*/
 };
 
 #endif // FACTORY_H

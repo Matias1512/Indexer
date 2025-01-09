@@ -9,7 +9,7 @@ class Command : public QObject
 {
 public:
     virtual ~Command() {}
-    virtual void execute() const = 0; // Méthode virtuelle pure
+    virtual QString getSQL() = 0;
 };
 
 #endif // COMMAND_H

@@ -37,6 +37,7 @@ add_executable(indexer
 )
 target_link_libraries(indexer Qt${QT_VERSION_MAJOR}::Core Qt6::Core Qt6::Sql)
 
+
 if(COMMAND qt_create_translation)
     qt_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${TS_FILES})
 else()
