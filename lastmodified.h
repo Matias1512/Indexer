@@ -14,7 +14,7 @@ private:
     QString timeUnit;
     QString andOr;
 
-    QString formatTimeUnit(QString& timeUnit);
+    QString formatTimeUnit(const QString& timeUnit) const;
 public:
 
     //CONSTRUCTEUR
@@ -46,8 +46,8 @@ public:
     void setTimeUnit(const QString& value) { timeUnit = value; }
     void setAndOr(const QString& value) { andOr = value; }
 
-    QString formatDate(const QString& inputDate);
-    QString getSQL(const bool isTheFirstOption, const bool isTheLastOption);
+    QString formatDate(const QString& inputDate) const;
+    QString getSQL(bool isTheFirstOption, bool isTheLastOption) const override;
 };
 
 #endif // LASTMODIFIED_H

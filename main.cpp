@@ -87,8 +87,6 @@ int main(int argc, char *argv[])
 
     qDebug() << "File indexing complete.";
     **/
-    LastModified testlast("SINCE", "3", "DAYS");
-    qDebug() << testlast.getSQL(true,true);
 
     GetCommand testGet("WHITELIST");
     qDebug() << testGet.getSQL();
@@ -98,6 +96,15 @@ int main(int argc, char *argv[])
     QList<QString> listExt = { "exe", "jpg", "txt"};
     AddCommand addTest2("WHITELIST", listExt);
     qDebug() << addTest2.getSQL();
+
+    LastModified testlast("SINCE", "3", "DAYS");
+    qDebug() << testlast.getSQL(true, true);
+
+    // Création de la liste avec des pointeurs
+    QList<Option*> listOption = { &testlast }; // Utilisation de &testlast pour obtenir un pointeur
+
+    SearchCommand testSearchCommand("bonjour", listOption);
+    qDebug() << testSearchCommand.getSQL();
 
     return a.exec();
 }

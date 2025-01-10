@@ -8,6 +8,7 @@ class Option : public QObject
 public:
     virtual ~Option() {}
     //virtual void execute() const = 0; // Méthode virtuelle pure
+    virtual QString getSQL(bool isFirst, bool isLast) const = 0;
 };
 
 #endif // OPTION_H
