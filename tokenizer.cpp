@@ -81,9 +81,5 @@ QList<Token> tokenizer::tokenizerCommand(QString command){
         }
     }
 
-    for (const Token &token : tokenList) {
-        qDebug() << "Key:" << token.getKey() << ", Value:" << token.getValue();
-    }
-
     return tokenList;
 }

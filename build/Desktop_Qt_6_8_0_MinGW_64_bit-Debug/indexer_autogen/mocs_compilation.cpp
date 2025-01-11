@@ -3,5 +3,6 @@
 #include "EWIEGA46WW/moc_clearcommand.cpp"
 #include "EWIEGA46WW/moc_getcommand.cpp"
 #include "EWIEGA46WW/moc_indexercommand.cpp"
+#include "EWIEGA46WW/moc_optionUtil.cpp"
 #include "EWIEGA46WW/moc_pushcommand.cpp"
 #include "EWIEGA46WW/moc_tokenizer.cpp"

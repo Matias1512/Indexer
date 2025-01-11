@@ -1,10 +1,10 @@
-#ifndef LASTMODIFIED_H
-#define LASTMODIFIED_H
+#ifndef CREATED_H
+#define CREATED_H
 
 #include <QObject>
 #include "option.h"
 
-class LastModified : public Option
+class Created : public Option
 {
 private:
     QString dateSpec;
@@ -13,24 +13,22 @@ private:
     QString numberSinceLastDate;
     QString timeUnit;
     QString andOr;
+
+    QString formatTimeUnit(const QString& timeUnit) const;
 public:
 
     //CONSTRUCTEUR
-    // Constructeur avec uniquement dateSpec ----- 1 arguments
-    LastModified(const QString& dateSpec)
+    // Constructeur avec uniquement dateSpec
+    Created(const QString& dateSpec)
         : dateSpec(dateSpec), dateMax(""), dateMin(""), numberSinceLastDate(""), timeUnit("") {}
 
-    // Constructeur avec dateSpec et timeUnit ----- 2 arguments
-    LastModified(const QString& dateSpec, const QString& timeUnit)
-        : dateSpec(dateSpec), dateMax(""), dateMin(""), numberSinceLastDate(""), timeUnit(timeUnit) {}
-
-    // Constructeur avec dateSpec, numberSinceLastDate et timeUnit ----- 3 arguments
-    LastModified(const QString& dateSpec, const QString& numberSinceLastDate, const QString& timeUnit)
-        : dateSpec(dateSpec), dateMax(""), dateMin(""), numberSinceLastDate(numberSinceLastDate), timeUnit(timeUnit) {}
-
-    // Constructeur avec dateSpec, dateMin, dateMax et And ----- 4 arguments
-    LastModified(const QString& dateSpec, const QString& dateMin, const QString& And, const QString& dateMax)
+    // Constructeur avec dateSpec, dateMin et dateMax
+    Created(const QString& dateSpec, const QString& dateMin, const QString& dateMax, const QString& And)
         : dateSpec(dateSpec), dateMax(dateMax), dateMin(dateMin), andOr(andOr), numberSinceLastDate(""), timeUnit("") {}
+
+    // Constructeur avec dateSpec et numberSinceLastDate
+    Created(const QString& dateSpec, const QString& numberSinceLastDate, const QString& timeUnit)
+        : dateSpec(dateSpec), dateMax(""), dateMin(""), numberSinceLastDate(numberSinceLastDate), timeUnit(timeUnit) {}
 
     // Méthodes pour récupérer les valeurs des paramètres
     QString getDateSpec() const { return dateSpec; }
@@ -48,7 +46,8 @@ public:
     void setTimeUnit(const QString& value) { timeUnit = value; }
     void setAndOr(const QString& value) { andOr = value; }
 
+    QString formatDate(const QString& inputDate) const;
     QString getSQL(bool isTheFirstOption, bool isTheLastOption) const override;
 };
 
-#endif // LASTMODIFIED_H
+#endif // CREATED_H

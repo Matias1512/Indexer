@@ -16,9 +16,6 @@ int main(int argc, char *argv[])
     QCoreApplication a(argc, argv);
 
     /**
-    tokenizer token;
-    QList<Token> listToken = token.tokenizerCommand("SEARCH \"testme please\" LAST_MODIFIED:BETWEEN 2 days and 3 days CREATED:31/12/2020 MAX_SIZE:10M MIN_SIZE:1M SIZE:BETWEEN 10M AND 20M EXT:txt,doc,xlsx TYPE:image OR text");
-
     Command* command = Factory::createCommand(listToken[0].getKey());
     if (command) {
         command->execute();
@@ -88,6 +85,10 @@ int main(int argc, char *argv[])
     qDebug() << "File indexing complete.";
     **/
 
+
+    //{"SEARCH", "testme please", "LAST_MODIFIED", "BETWEEN", "2", "days", "and", "3", "days", "CREATED", "31/12/2020", "MAX_SIZE", "10M", "MIN_SIZE", "1M", "SIZE", "BETWEEN", "10M", "AND", "20M", "EXT", "txt,doc,xlsx", "TYPE", "image", "OR", "text"}
+
+
     GetCommand testGet("WHITELIST");
     qDebug() << testGet.getSQL();
 
@@ -105,6 +106,11 @@ int main(int argc, char *argv[])
 
     SearchCommand testSearchCommand("bonjour", listOption);
     qDebug() << testSearchCommand.getSQL();
+
+    tokenizer token;
+    QList<Token> listToken = token.tokenizerCommand("SEARCH \"testme please\" LAST_MODIFIED:BETWEEN 2 days and 3 days");
+    SearchCommand* factoryTest = static_cast<SearchCommand*>(Factory::createCommand(listToken));
+    qDebug() << factoryTest->getSQL();
 
     return a.exec();
 }

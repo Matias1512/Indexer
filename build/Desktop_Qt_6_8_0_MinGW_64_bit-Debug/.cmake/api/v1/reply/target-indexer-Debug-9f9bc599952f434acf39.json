@@ -41,13 +41,13 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 48,
+				"line" : 51,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 38,
+				"line" : 41,
 				"parent" : 0
 			},
 			{
@@ -188,18 +188,21 @@
 				22,
 				24,
 				26,
-				29
+				29,
+				30,
+				32,
+				34
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"id" : "indexer_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "indexer_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "indexer_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "indexer::@6890427a1f51a3e7e1df",
@@ -282,7 +285,10 @@
 				22,
 				24,
 				26,
-				29
+				29,
+				30,
+				32,
+				34
 			]
 		},
 		{
@@ -290,7 +296,7 @@
 			"sourceIndexes" : 
 			[
 				2,
-				30
+				35
 			]
 		},
 		{
@@ -311,14 +317,16 @@
 				23,
 				25,
 				27,
-				28
+				28,
+				31,
+				33
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				31
+				36
 			]
 		}
 	],
@@ -487,6 +495,34 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "lastmodified.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "factory.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "created.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "created.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "optionUtil.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "optionUtil.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

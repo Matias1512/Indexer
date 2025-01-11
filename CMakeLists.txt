@@ -33,6 +33,9 @@ add_executable(indexer
   transition.h transition.cpp
   option.h
   lastmodified.h lastmodified.cpp
+  factory.cpp
+  created.h created.cpp
+  optionUtil.h optionUtil.cpp
 
 )
 target_link_libraries(indexer Qt${QT_VERSION_MAJOR}::Core Qt6::Core Qt6::Sql)

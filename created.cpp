@@ -1,18 +1,18 @@
-#include "lastmodified.h"
+#include "created.h"
 #include "optionUtil.h"
 #include <QDate>
 
-QString LastModified::getSQL(bool isTheFirstOption, bool isTheLastOption) const {
+QString Created::getSQL(bool isTheFirstOption, bool isTheLastOption) const {
     QString request = "";
     bool isNumber;
     this->dateSpec.toInt(&isNumber);
     //est la premier option
     if(isTheFirstOption) {
-        request = "WHERE last_modified_date";
+        request = "WHERE created_date";
     } else {
-        request = "AND last_modified_date";
+        request = "AND created_date";
     }
-        //a un between
+    //a un between
     if(this->dateSpec == "BETWEEN") {
         request.append(" BETWEEN " + OptionUtil::formatDate(this->dateMin) + " AND " + OptionUtil::formatDate(this->dateMax));
     }   //a un since last
@@ -20,12 +20,12 @@ QString LastModified::getSQL(bool isTheFirstOption, bool isTheLastOption) const 
         QString formattedTimeUnit = OptionUtil::formatTimeUnit(this->timeUnit); // Utilise la version formatée
         request.append(" >= DATE_SUB(CURDATE(), INTERVAL " + this->numberSinceLastDate + " " + formattedTimeUnit + ")");
     }
-        //est un number
-    else if(isNumber && !(this->timeUnit.isEmpty())) {
+    //est un number
+    else if(isNumber && !this->timeUnit.isEmpty()) {
         QString formattedTimeUnit = OptionUtil::formatTimeUnit(this->timeUnit); // Utilise la version formatée
         request.append(" <= " + this->numberSinceLastDate + formattedTimeUnit);
     }
-        //est une date
+    //est une date
     else {
         request.append(" = " + OptionUtil::formatDate(this->dateSpec));
     }
@@ -36,3 +36,4 @@ QString LastModified::getSQL(bool isTheFirstOption, bool isTheLastOption) const 
     }
     return request;
 }
+

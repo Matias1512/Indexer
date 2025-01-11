@@ -8,6 +8,7 @@
 #include "addcommand.h"
 #include "pushcommand.h"
 #include "clearcommand.h"
+#include "token.h"
 
 #include <QString>
 #include <QHash>
@@ -16,25 +17,7 @@
 class Factory
 {
 public:
-    /*
-    static Command* createCommand(const QString &commandName)
-    {
-        if (commandName == "SEARCH")
-            return new SearchCommand();
-        else if (commandName == "INDEXER")
-            return new IndexerCommand();
-        else if (commandName == "GET")
-            return new GetCommand();
-        else if (commandName == "ADD")
-            return new AddCommand();
-        else if (commandName == "PUSH")
-            return new PushCommand();
-        else if (commandName == "CLEAR")
-            return new ClearCommand();
-
-        return nullptr; // Si la commande est invalide
-    }
-*/
+    static Command* createCommand(const QList<Token>& tokenList);
 };
 
 #endif // FACTORY_H
