@@ -310,6 +310,12 @@
 			null
 		],
 		[
+			"C:/Users/matia/Documents/Dev Logiciel/Indexer/size.h",
+			"MU",
+			"EWIEGA46WW/moc_size.cpp",
+			null
+		],
+		[
 			"C:/Users/matia/Documents/Dev Logiciel/Indexer/state.h",
 			"MU",
 			"EWIEGA46WW/moc_state.cpp",
@@ -464,6 +470,7 @@
 			"MU",
 			null
 		],
+		[ "C:/Users/matia/Documents/Dev Logiciel/Indexer/size.cpp", "MU", null ],
 		[ "C:/Users/matia/Documents/Dev Logiciel/Indexer/state.cpp", "MU", null ],
 		[ "C:/Users/matia/Documents/Dev Logiciel/Indexer/token.cpp", "MU", null ],
 		[

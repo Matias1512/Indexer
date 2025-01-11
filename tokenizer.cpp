@@ -49,7 +49,7 @@ QList<Token> tokenizer::tokenizerCommand(QString command){
             if(commandParts[i].startsWith("\"") && commandParts[i].endsWith("\"")){
                 tokenList.append( Token(commandParts[i], "string"));
             } else if (allOptions.contains(commandParts[i].toUpper())) {
-                tokenList.append( Token(commandParts[i], "options"));
+                tokenList.append( Token(commandParts[i], "option"));
             } else if (commandParts[i].toUpper() == "BETWEEN") {
                 tokenList.append( Token(commandParts[i], "BETWEEN"));
             } else if (commandParts[i].toUpper() == "AND") {

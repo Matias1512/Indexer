@@ -482,6 +482,8 @@ indexer_autogen/timestamp: \
 	C:/Users/matia/Documents/Dev\ Logiciel/Indexer/pushcommand.h \
 	C:/Users/matia/Documents/Dev\ Logiciel/Indexer/searchcommand.cpp \
 	C:/Users/matia/Documents/Dev\ Logiciel/Indexer/searchcommand.h \
+	C:/Users/matia/Documents/Dev\ Logiciel/Indexer/size.cpp \
+	C:/Users/matia/Documents/Dev\ Logiciel/Indexer/size.h \
 	C:/Users/matia/Documents/Dev\ Logiciel/Indexer/state.cpp \
 	C:/Users/matia/Documents/Dev\ Logiciel/Indexer/state.h \
 	C:/Users/matia/Documents/Dev\ Logiciel/Indexer/token.cpp \

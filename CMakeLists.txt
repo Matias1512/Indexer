@@ -38,6 +38,7 @@ add_executable(indexer
   optionUtil.h optionUtil.cpp
   maxsize.h maxsize.cpp
   minsize.h minsize.cpp
+  size.h size.cpp
 
 )
 target_link_libraries(indexer Qt${QT_VERSION_MAJOR}::Core Qt6::Core Qt6::Sql)

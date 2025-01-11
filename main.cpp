@@ -112,7 +112,7 @@ int main(int argc, char *argv[])
     qDebug() << testSearchCommand.getSQL();
 
     tokenizer token;
-    QList<Token> listToken = token.tokenizerCommand("SEARCH \"testme please\" LAST_MODIFIED:BETWEEN 2 days and 3 days");
+    QList<Token> listToken = token.tokenizerCommand("SEARCH \"testme please\" LAST_MODIFIED:BETWEEN 2 days and 3 days CREATED:21/12/2020 MAX_SIZE:10M");
     SearchCommand* factoryTest = static_cast<SearchCommand*>(Factory::createCommand(listToken));
     qDebug() << factoryTest->getSQL();
 

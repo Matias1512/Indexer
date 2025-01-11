@@ -62,3 +62,12 @@ QString OptionUtil::convertSizeUnit(const int& number, const QString& unit) {
     }
     return convertSize;
 }
+
+QList<QString> OptionUtil::splitSizeSpec(const QString& sizeSpec){
+    // Récupère le dernier caractère
+    QString unit = sizeSpec.right(1);
+
+    // Récupère tout sauf le dernier caractère
+    QString size = sizeSpec.left(sizeSpec.size() - 1);
+    return {unit, size};
+}
