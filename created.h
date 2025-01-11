@@ -47,7 +47,7 @@ public:
     void setAndOr(const QString& value) { andOr = value; }
 
     QString formatDate(const QString& inputDate) const;
-    QString getSQL(bool isTheFirstOption, bool isTheLastOption) const override;
+    QString getSQL(bool isTheLastOption) const override;
 };
 
 #endif // CREATED_H

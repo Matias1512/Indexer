@@ -10,6 +10,8 @@
 #include "Transition.h"
 #include "Fsm.h"
 #include "lastmodified.h"
+#include "created.h"
+#include "optionUtil.h"
 
 int main(int argc, char *argv[])
 {
@@ -83,8 +85,7 @@ int main(int argc, char *argv[])
     indexer->printDatabaseContents();
 
     qDebug() << "File indexing complete.";
-    **/
-
+**/
 
     //{"SEARCH", "testme please", "LAST_MODIFIED", "BETWEEN", "2", "days", "and", "3", "days", "CREATED", "31/12/2020", "MAX_SIZE", "10M", "MIN_SIZE", "1M", "SIZE", "BETWEEN", "10M", "AND", "20M", "EXT", "txt,doc,xlsx", "TYPE", "image", "OR", "text"}
 
@@ -99,7 +100,10 @@ int main(int argc, char *argv[])
     qDebug() << addTest2.getSQL();
 
     LastModified testlast("SINCE", "3", "DAYS");
-    qDebug() << testlast.getSQL(true, true);
+    qDebug() << testlast.getSQL(true);
+
+    Created testCreated("SINCE", "3", "DAYS");
+    qDebug() << testCreated.getSQL(true);
 
     // Création de la liste avec des pointeurs
     QList<Option*> listOption = { &testlast }; // Utilisation de &testlast pour obtenir un pointeur

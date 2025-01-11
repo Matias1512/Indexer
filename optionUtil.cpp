@@ -3,13 +3,13 @@
 
 // à mettre dans une autre fonction type datespec plus tard
 QString OptionUtil::formatTimeUnit(const QString& timeUnit) {
-    if (timeUnit == "DAYS") {
+    if (timeUnit.toUpper() == "DAYS") {
         return "DAY";
-    } else if (timeUnit == "MINUTES") {
+    } else if (timeUnit.toUpper() == "MINUTES") {
         return "MINUTE";
-    } else if (timeUnit == "HOURS") {
+    } else if (timeUnit.toUpper() == "HOURS") {
         return "HOUR";
-    } else if (timeUnit == "MONTHS") {
+    } else if (timeUnit.toUpper() == "MONTHS") {
         return "MONTH";
     }
     return timeUnit; // Retourne la valeur d'origine si elle n'est pas dans la liste
@@ -49,4 +49,16 @@ QString OptionUtil::formatDate(const QString& inputDate) {
     }
 
     return date.toString("dd/MM/yyyy"); // Retourne la date formatée
+}
+
+QString OptionUtil::convertSizeUnit(const int& number, const QString& unit) {
+    QString convertSize;
+    if(unit == "K") {
+        convertSize = QString::number(number);
+    } else if(unit == "M"){
+        convertSize = QString::number(number*1000);
+    } else if(unit == "G"){
+        convertSize = QString::number(number*1000000);
+    }
+    return convertSize;
 }

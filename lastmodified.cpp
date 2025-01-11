@@ -2,28 +2,33 @@
 #include "optionUtil.h"
 #include <QDate>
 
-QString LastModified::getSQL(bool isTheFirstOption, bool isTheLastOption) const {
+QString LastModified::getSQL(bool isTheLastOption) const {
     QString request = "";
     bool isNumber;
     this->dateSpec.toInt(&isNumber);
-    //est la premier option
-    if(isTheFirstOption) {
-        request = "WHERE last_modified_date";
-    } else {
-        request = "AND last_modified_date";
-    }
-        //a un between
+    request = "AND last_modified_date";
+
+    //a un between
     if(this->dateSpec == "BETWEEN") {
-        request.append(" BETWEEN " + OptionUtil::formatDate(this->dateMin) + " AND " + OptionUtil::formatDate(this->dateMax));
+        if(this->firstTimeUnit.isEmpty() && this->secondTimeUnit.isEmpty()){
+            request.append(" BETWEEN " + OptionUtil::formatTimeUnit(this->dateMin) + " AND " + OptionUtil::formatTimeUnit(this->dateMax) + " ");
+        } else {
+            QString formattedTimeUnit1 = OptionUtil::formatTimeUnit(this->firstTimeUnit); // Utilise la version formatée
+            QString formattedTimeUnit2 = OptionUtil::formatTimeUnit(this->secondTimeUnit); // Utilise la version formatée
+            //BETWEEN DATE_SUB(CURDATE(), INTERVAL 3 DAY) AND DATE_SUB(CURDATE(), INTERVAL 2 DAY);
+            request.append(QString(" BETWEEN DATE_SUB(CURDATE(), INTERVAL %1 %2) AND DATE_SUB(CURDATE(), INTERVAL %3 %4) ").arg(
+                OptionUtil::formatTimeUnit(this->dateMin), formattedTimeUnit1, OptionUtil::formatTimeUnit(this->dateMax), formattedTimeUnit2 ));
+        }
+
     }   //a un since last
     else if(this->dateSpec == "SINCE") {
-        QString formattedTimeUnit = OptionUtil::formatTimeUnit(this->timeUnit); // Utilise la version formatée
-        request.append(" >= DATE_SUB(CURDATE(), INTERVAL " + this->numberSinceLastDate + " " + formattedTimeUnit + ")");
+        QString formattedTimeUnit = OptionUtil::formatTimeUnit(this->firstTimeUnit); // Utilise la version formatée
+        request.append(" >= DATE_SUB(CURDATE(), INTERVAL " + this->numberSinceLastDate + " " + formattedTimeUnit + ") ");
     }
         //est un number
-    else if(isNumber && !(this->timeUnit.isEmpty())) {
-        QString formattedTimeUnit = OptionUtil::formatTimeUnit(this->timeUnit); // Utilise la version formatée
-        request.append(" <= " + this->numberSinceLastDate + formattedTimeUnit);
+    else if(isNumber && !(this->firstTimeUnit.isEmpty())) {
+        QString formattedTimeUnit = OptionUtil::formatTimeUnit(this->firstTimeUnit); // Utilise la version formatée
+        request.append(QString(">= DATE_SUB(CURDATE(), INTERVAL %1 %2)").arg( this->numberSinceLastDate, formattedTimeUnit));
     }
         //est une date
     else {

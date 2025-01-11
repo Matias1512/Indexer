@@ -471,6 +471,10 @@ indexer_autogen/timestamp: \
 	C:/Users/matia/Documents/Dev\ Logiciel/Indexer/lastmodified.cpp \
 	C:/Users/matia/Documents/Dev\ Logiciel/Indexer/lastmodified.h \
 	C:/Users/matia/Documents/Dev\ Logiciel/Indexer/main.cpp \
+	C:/Users/matia/Documents/Dev\ Logiciel/Indexer/maxsize.cpp \
+	C:/Users/matia/Documents/Dev\ Logiciel/Indexer/maxsize.h \
+	C:/Users/matia/Documents/Dev\ Logiciel/Indexer/minsize.cpp \
+	C:/Users/matia/Documents/Dev\ Logiciel/Indexer/minsize.h \
 	C:/Users/matia/Documents/Dev\ Logiciel/Indexer/option.h \
 	C:/Users/matia/Documents/Dev\ Logiciel/Indexer/optionUtil.cpp \
 	C:/Users/matia/Documents/Dev\ Logiciel/Indexer/optionUtil.h \

@@ -9,6 +9,7 @@ class OptionUtil : public QObject
 public:
     static QString formatTimeUnit(const QString& timeUnit);
     static QString formatDate(const QString& inputDate);
+    static QString convertSizeUnit(const int& number, const QString& unit);
 signals:
 };
 

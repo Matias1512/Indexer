@@ -274,6 +274,18 @@
 			null
 		],
 		[
+			"C:/Users/matia/Documents/Dev Logiciel/Indexer/maxsize.h",
+			"MU",
+			"EWIEGA46WW/moc_maxsize.cpp",
+			null
+		],
+		[
+			"C:/Users/matia/Documents/Dev Logiciel/Indexer/minsize.h",
+			"MU",
+			"EWIEGA46WW/moc_minsize.cpp",
+			null
+		],
+		[
 			"C:/Users/matia/Documents/Dev Logiciel/Indexer/option.h",
 			"MU",
 			"EWIEGA46WW/moc_option.cpp",
@@ -427,6 +439,16 @@
 			null
 		],
 		[ "C:/Users/matia/Documents/Dev Logiciel/Indexer/main.cpp", "MU", null ],
+		[
+			"C:/Users/matia/Documents/Dev Logiciel/Indexer/maxsize.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/matia/Documents/Dev Logiciel/Indexer/minsize.cpp",
+			"MU",
+			null
+		],
 		[
 			"C:/Users/matia/Documents/Dev Logiciel/Indexer/optionUtil.cpp",
 			"MU",
