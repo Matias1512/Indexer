@@ -35,19 +35,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 18,
+				"line" : 19,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 52,
+				"line" : 58,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 42,
+				"line" : 48,
 				"parent" : 0
 			},
 			{
@@ -192,18 +192,22 @@
 				30,
 				32,
 				34,
-				36
+				36,
+				38,
+				40,
+				42,
+				44
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"id" : "indexer_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "indexer_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "indexer_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "indexer::@6890427a1f51a3e7e1df",
@@ -290,7 +294,11 @@
 				30,
 				32,
 				34,
-				36
+				36,
+				38,
+				40,
+				42,
+				44
 			]
 		},
 		{
@@ -298,7 +306,7 @@
 			"sourceIndexes" : 
 			[
 				2,
-				37
+				45
 			]
 		},
 		{
@@ -322,14 +330,18 @@
 				28,
 				31,
 				33,
-				35
+				35,
+				37,
+				39,
+				41,
+				43
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				38
+				46
 			]
 		}
 	],
@@ -537,6 +549,50 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "maxsize.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "minsize.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "minsize.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "size.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "size.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ext.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ext.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "type.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "type.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

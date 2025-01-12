@@ -4,6 +4,10 @@
 #include "created.h"
 #include "optionUtil.h"
 #include "maxsize.h"
+#include "minsize.h"
+#include "size.h"
+#include "ext.h"
+#include "type.h"
 #include <stdexcept>
 
 Command* Factory::createCommand(const QList<Token>& tokenList) {
@@ -83,11 +87,64 @@ Command* Factory::createCommand(const QList<Token>& tokenList) {
                 //MAX_SIZE
                 else if(tokenList[i].getKey() == "MAX_SIZE") {
                     if(tokenList[i+1].getValue() == "SizeSpec") {
-                        QList<QString> sizeSpecSplit = OptionUtil::splitSizeSpec(tokenList[i+1].getValue());
-                        optionsList.append(new MaxSize(sizeSpecSplit[0].toInt(),sizeSpecSplit[1]));
+                        QList<QString> sizeSpecSplit = OptionUtil::splitSizeSpec(tokenList[i+1].getKey());
+                        QString convertSize = OptionUtil::convertSizeUnit(sizeSpecSplit[0].toInt(), sizeSpecSplit[1]);
+                        optionsList.append(new MaxSize(convertSize.toInt(),sizeSpecSplit[1]));
                     } else {
                         throw std::runtime_error("Erreur avec l'argument du MAX_SIZE");
                     }
+                }
+
+                //MIN_SIZE
+                else if(tokenList[i].getKey() == "MIN_SIZE") {
+                    if(tokenList[i+1].getValue() == "SizeSpec") {
+                        QList<QString> sizeSpecSplit = OptionUtil::splitSizeSpec(tokenList[i+1].getKey());
+                        QString convertSize = OptionUtil::convertSizeUnit(sizeSpecSplit[0].toInt(), sizeSpecSplit[1]);
+                        optionsList.append(new MinSize(convertSize.toInt(),sizeSpecSplit[1]));
+                    } else {
+                        throw std::runtime_error("Erreur avec l'argument du MIN_SIZE");
+                    }
+                }
+
+                //SIZE
+                else if(tokenList[i].getKey() == "SIZE"){
+                    if(tokenList[i+1].getValue() == "SizeSpec") {
+                        QList<QString> sizeSpecSplit = OptionUtil::splitSizeSpec(tokenList[i+1].getKey());
+                        QString convertSize = OptionUtil::convertSizeUnit(sizeSpecSplit[0].toInt(), sizeSpecSplit[1]);
+                        optionsList.append(new Size(convertSize.toInt()));
+                    } else if (tokenList[i+1].getValue() == "BETWEEN" && tokenList[i+2].getValue() == "SizeSpec"){
+                        QList<QString> sizeSpecSplit = OptionUtil::splitSizeSpec(tokenList[i+2].getKey());
+                        QString convertSize1 = OptionUtil::convertSizeUnit(sizeSpecSplit[0].toInt(), sizeSpecSplit[1]);
+                        QList<QString> sizeSpecSplit2 = OptionUtil::splitSizeSpec(tokenList[i+4].getKey());
+                        QString convertSize2 = OptionUtil::convertSizeUnit(sizeSpecSplit2[0].toInt(), sizeSpecSplit2[1]);
+                        optionsList.append(new Size(convertSize1.toInt(), convertSize2.toInt()));
+                    } else {
+                    throw std::runtime_error("Erreur avec l'argument du SIZE");
+                    }
+                }
+
+                //EXT
+                else if(tokenList[i].getKey() == "EXT"){
+                    QList<QString> listExtension;
+                    if(tokenList[i+1].getKey().contains(",")) {
+                        listExtension = tokenList[i+1].getKey().split(",");
+                    } else {
+                        listExtension = { tokenList[i+1].getKey() };
+                    }
+                    optionsList.append(new Ext(listExtension));
+                }
+
+                //TYPE
+                else if(tokenList[i].getKey() == "TYPE"){
+                    QList<QString> listType;
+                    for (int y = i+1; y < tokenList.size(); ++y) {
+                        if(tokenList[y].getValue() == "option") {
+                            break;
+                        } else if(tokenList[y].getValue() == "FileType"){
+                            listType.append(tokenList[y].getKey());
+                        }
+                    }
+                    optionsList.append(new Type(listType));
                 }
             }
 

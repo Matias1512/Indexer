@@ -12,6 +12,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core LinguistTools)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core LinguistTools)
 find_package(Qt6 REQUIRED COMPONENTS Core Sql)
+find_package(Qt6 COMPONENTS Core REQUIRED)
 
 set(TS_FILES indexer_fr_FR.ts)
 
@@ -39,10 +40,14 @@ add_executable(indexer
   maxsize.h maxsize.cpp
   minsize.h minsize.cpp
   size.h size.cpp
+  ext.h ext.cpp
+  ext.h ext.cpp
+  type.h type.cpp
 
 )
 target_link_libraries(indexer Qt${QT_VERSION_MAJOR}::Core Qt6::Core Qt6::Sql)
 
+set_target_properties(indexer PROPERTIES WIN32_EXECUTABLE OFF)
 
 if(COMMAND qt_create_translation)
     qt_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${TS_FILES})

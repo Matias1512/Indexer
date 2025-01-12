@@ -65,6 +65,7 @@ set(OLD_GLOB
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/mocs_compilation.cpp"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/clearcommand.cpp"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/created.cpp"
+  "C:/Users/matia/Documents/Dev Logiciel/Indexer/ext.cpp"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/factory.cpp"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/fsm.cpp"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/getcommand.cpp"
@@ -82,6 +83,7 @@ set(OLD_GLOB
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/token.cpp"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/tokenizer.cpp"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/transition.cpp"
+  "C:/Users/matia/Documents/Dev Logiciel/Indexer/type.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -105,6 +107,7 @@ set(OLD_GLOB
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/moc_predefs.h"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/clearcommand.h"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/created.h"
+  "C:/Users/matia/Documents/Dev Logiciel/Indexer/ext.h"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/factory.h"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/fsm.h"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/getcommand.h"
@@ -122,6 +125,7 @@ set(OLD_GLOB
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/token.h"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/tokenizer.h"
   "C:/Users/matia/Documents/Dev Logiciel/Indexer/transition.h"
+  "C:/Users/matia/Documents/Dev Logiciel/Indexer/type.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

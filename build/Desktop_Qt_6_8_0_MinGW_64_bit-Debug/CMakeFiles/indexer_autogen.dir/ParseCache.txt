@@ -648,6 +648,7 @@ C:/Users/matia/Documents/Dev Logiciel/Indexer/addcommand.h
  mdp:C:/Users/matia/Documents/Dev Logiciel/Indexer/Command.h
  mdp:C:/Users/matia/Documents/Dev Logiciel/Indexer/addcommand.h
  mdp:C:/Users/matia/Documents/Dev Logiciel/Indexer/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/indexer_autogen/moc_predefs.h
+C:/Users/matia/Documents/Dev Logiciel/Indexer/ext.cpp
 C:/Users/matia/Documents/Dev Logiciel/Indexer/fsm.h
 C:/Users/matia/Documents/Dev Logiciel/Indexer/clearcommand.h
  mmc:Q_OBJECT
@@ -2592,3 +2593,6 @@ C:/Users/matia/Documents/Dev Logiciel/Indexer/formattimeunit.cpp
 C:/Users/matia/Documents/Dev Logiciel/Indexer/maxsize.h
 C:/Users/matia/Documents/Dev Logiciel/Indexer/maxsize.cpp
 C:/Users/matia/Documents/Dev Logiciel/Indexer/size.h
+C:/Users/matia/Documents/Dev Logiciel/Indexer/ext.h
+C:/Users/matia/Documents/Dev Logiciel/Indexer/type.h
+C:/Users/matia/Documents/Dev Logiciel/Indexer/type.cpp

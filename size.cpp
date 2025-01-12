@@ -6,7 +6,7 @@ QString Size::getSQL(bool isTheLastOption) const {
     if(this->maxSize == -1){
         request = "AND size = " + QString::number(this->size);
     } else {
-        request = QString("AND size BETWEEN %1 AND %2 ").arg(this->size, this->maxSize);
+        request = QString("AND size BETWEEN %1 AND %2 ").arg(QString::number(this->size), QString::number(this->maxSize));
     }
 
     if(isTheLastOption){

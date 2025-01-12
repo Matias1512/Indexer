@@ -69,5 +69,5 @@ QList<QString> OptionUtil::splitSizeSpec(const QString& sizeSpec){
 
     // Récupère tout sauf le dernier caractère
     QString size = sizeSpec.left(sizeSpec.size() - 1);
-    return {unit, size};
+    return {size, unit};
 }
