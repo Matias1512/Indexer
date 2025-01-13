@@ -1,7 +1,7 @@
 #ifndef SEARCHCOMMAND_H
 #define SEARCHCOMMAND_H
 
-#include "command.h"
+#include "Command.h"
 #include "option.h"
 
 #include<QList>

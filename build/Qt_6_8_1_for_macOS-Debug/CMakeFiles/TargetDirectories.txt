@@ -1,0 +1,9 @@
+/Users/kevin/Desktop/Indexer/build/Qt_6_8_1_for_macOS-Debug/CMakeFiles/indexer.dir
+/Users/kevin/Desktop/Indexer/build/Qt_6_8_1_for_macOS-Debug/CMakeFiles/edit_cache.dir
+/Users/kevin/Desktop/Indexer/build/Qt_6_8_1_for_macOS-Debug/CMakeFiles/rebuild_cache.dir
+/Users/kevin/Desktop/Indexer/build/Qt_6_8_1_for_macOS-Debug/CMakeFiles/list_install_components.dir
+/Users/kevin/Desktop/Indexer/build/Qt_6_8_1_for_macOS-Debug/CMakeFiles/install.dir
+/Users/kevin/Desktop/Indexer/build/Qt_6_8_1_for_macOS-Debug/CMakeFiles/install/local.dir
+/Users/kevin/Desktop/Indexer/build/Qt_6_8_1_for_macOS-Debug/CMakeFiles/install/strip.dir
+/Users/kevin/Desktop/Indexer/build/Qt_6_8_1_for_macOS-Debug/CMakeFiles/indexer_autogen_timestamp_deps.dir
+/Users/kevin/Desktop/Indexer/build/Qt_6_8_1_for_macOS-Debug/CMakeFiles/indexer_autogen.dir

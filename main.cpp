@@ -4,14 +4,7 @@
 #include <QThread>
 #include "tokenizer.h"
 #include "token.h"
-#include "Command.h"
 #include "factory.h"
-#include "State.h"
-#include "Transition.h"
-#include "Fsm.h"
-#include "lastmodified.h"
-#include "created.h"
-#include "optionUtil.h"
 
 int main(int argc, char *argv[])
 {
